@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif,serif;
+}
+
+.Header{
+    padding-top: 0.5px;
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+    background-position: center;
+    background-size: cover;  
+}
+
+@media(max-aspect-ratio:16/9){
+    .Header{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.navbar{
+    padding-top: 3%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    padding-left:10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 180px;
+    cursor: pointer;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+
+}
+
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+nav ul li a.Sign-up{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #423E3A;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a.Sign-up:hover{
+    background-color: #008080;
+}
+
+nav ul li a.Explore{
+    position: relative;
+    text-decoration: none;
+    color: #423E3A;
+    font-size: 18px;
+    display: inline-block;
+}
+
+nav ul li a.Explore:hover::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 1;
+    width: 100%;
+    height: 2px;
+    background-color:#008080;
+}
+
+nav ul li a.Blog{
+    position: relative;
+    text-decoration: none;
+    color: #423E3A;
+    font-size: 18px;
+    display: inline-block;
+}
+
+nav ul li a.Blog:hover::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 1;
+    width: 100%;
+    height: 2px;
+    background-color:#008080;
+}
+
+
+nav ul li a.Testimonies{
+    position: relative;
+    text-decoration: none;
+    color: #423E3A;
+    font-size: 18px;
+    display: inline-block;
+}
+
+nav ul li a.Testimonies:hover::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 1;
+    width: 100%;
+    height: 2px;
+    background-color:#008080;
+}
+
+.main{  
+    background-color: aliceblue;
+    width: 100%;
+    height:90vh;
+    overflow: hidden;
+}
+
+@media(max-aspect-ratio:16/9){
+    .main{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.Back-video{
+    top: 0%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media(min-aspect-ratio:16/9){
+    .Back-video{
+        width: 100%; 
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio:16/9){
+    .Back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+

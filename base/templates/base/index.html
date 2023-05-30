@@ -1,12 +1,47 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <H1>Hello there</H1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect</title>
+    <link rel="icon" href="{% static 'img/Main Logo-8.png' %}" type="image/png" />
+    <link rel="stylesheet" 
+    type="text/css"
+     href="{% static 'css/style.css' %}"
+    />
+  <body>
+    <div class="Header">
+      <div class="toggle" >
+
+        
+      </div>
+      <div class="navbar">
+        <img src="{% static 'img/connect-main-logo.png' %}" class="logo" alt="" />
+        <nav>
+          <ul>
+            <li><a href="" class="Explore">Explore</a></li>
+            <li><a href="" class="Blog">Blog</a></li>
+            <li><a href="" class="Testimonies">Testimonies</a></li>
+            <li><a href="" class="Sign-up">Sign-up</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="main">
+      <video autoplay loop muted play-inline class="Back-video">
+        <source src="{% static 'img/greeting video.mp4' %}" 
+        type="video/mp4"> 
+      </video>
+      <video autoplay loop muted play-inline class="Back-video">
+        <source src="{% static 'img/WORLD video.mp4' %}" 
+        type="video/mp4"> 
+      </video>
+      <div class="Tagline">
+        <h1>Empowering Connections, Inspiring Support</h1>
+
+      </div>
+    </div>
+  </body>
 </html>
