@@ -5,28 +5,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Connect</title>
-    <link rel="icon" href="{% static 'img/Main Logo-8.png' %}" type="image/png" />
+    <title>JamiiYangu</title>
+    <link rel="icon" href="{% static 'img/Jamii yangu-3.png' %}" class="Icon" type="image/png" />
     <link rel="stylesheet" 
-    type="text/css"
+     type="text/css"
      href="{% static 'css/style.css' %}"
     />
+  </head>
   <body>
     <div class="Header">
-      <div class="toggle" >
-
-        
-      </div>
+      <div class="toggle" ></div>
       <div class="navbar">
-        <img src="{% static 'img/connect-main-logo.png' %}" class="logo" alt="" />
-        <nav>
-          <ul>
-            <li><a href="" class="Explore">Explore</a></li>
-            <li><a href="" class="Blog">Blog</a></li>
-            <li><a href="" class="Testimonies">Testimonies</a></li>
-            <li><a href="" class="Sign-up">Sign-up</a></li>
-          </ul>
-        </nav>
+        <img src="{% static 'img/Main-logo 2.png' %}" class="logo" alt="" />
+          <nav>
+            <ul>
+              <li><a href="" class="Explore">Explore</a></li>
+              <li><a href="" class="Blog">Blog</a></li>
+              <li><a href="" class="Testimonies">Testimonies</a></li>
+              <button class="Login">Login</button>
+            </ul>
+          </nav>
       </div>
     </div>
     <div class="main">
@@ -35,9 +33,98 @@
         type="video/mp4"> 
       </video>
       <div class="Tagline">
-        <h1>Empowering Connections, Inspiring Support</h1>
-
+        <h2>Empowering Connections
+         <br> Inspiring Support
+        </h2>
       </div>
+      <div class="Registration_form" >
+        <span class="closeIcon"><ion-icon 
+          name="close-outline"></ion-icon>
+        </span>
+        <div class="Form_login">
+          <h2>Login</h2>
+          <form action="#">
+            <div class="input_box">
+              <span class="icon">
+                <ion-icon name="mail"></ion-icon>
+              </span>
+              <input type="email" required>
+              <label>Email</label> 
+            </div>
+            <div class="input_box">
+              <span class="icon">
+                <ion-icon name="lock-closed"></ion-icon>
+              </span>
+              <input type="password" required>
+              <label>Password</label> 
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox">Remember me</label>
+              <a href="#">Forgot password</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="login-register">
+              <p>Don't have an account?<a href="#" class="Register-Link">Register</a></p>
+            </div>
+          </form>
+        </div>
+
+        <div class="Form_Register">
+          <h2>Register</h2>
+          <form action="#">
+            <div class="input_box">
+              <span class="icon">
+                <ion-icon name="mail"></ion-icon>
+              </span>
+              <input type="email" required>
+              <label>Email</label> 
+            </div>
+            <div class="input_box">
+              <span class="icon">
+                <ion-icon name="lock-closed"></ion-icon>
+              </span>
+              <input type="password" required>
+              <label>Password</label> 
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox">Remember me</label>
+              <a href="#">Forgot password</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="login-register">
+              <p>Don't have an account?<a href="#" class="Register-Link">Register</a></p>
+            </div>
+          </form>
+        </div>
+        
     </div>
+   <div class="Intro-Container">
+     <div class="Rectangle-blue-colour">
+       <p> A Platform designed to connect <br>
+         and assist individuals within <br>
+         the community or group. 
+        </p>
+     </div>
+     <div class="Rectangle-brown-colour">
+        <p>
+         It serves as a podium where members 
+         <br> can seek and provide support, 
+         <br> share resources, and engage in meaningful
+         <br> interactions 
+       </p>
+     </div>
+     <div class="Rectangle-grey-colour">
+      <p>
+        facilitates communication, collaboration,
+        <br> and information sharing among community members 
+        <br> to address various needs, challenges, or interests.
+      </p>
+     </div>
+     <div  class="Intro-1">
+   </div>
+   <script src="script.js"></script>
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
+
